@@ -144,10 +144,15 @@ public class MainProgram {
         */
         // write your test code here
 
-        int[] numbers = {8, 3, 7, 9, 1, 2, 4};
+        int[] numbers = {-1, 3, 1, 2};
+        System.out.println(MainProgram.indexOfSmallestFrom(numbers, 0));
+        System.out.println(MainProgram.indexOfSmallestFrom(numbers, 1));
+        System.out.println(MainProgram.indexOfSmallestFrom(numbers, 2));
+        
+        //int[] numbers = {8, 3, 7, 9, 1, 2, 4};
 
-        sort(numbers);
-        System.out.println(Arrays.toString(numbers));
+        //sort(numbers);
+        //System.out.println(Arrays.toString(numbers));
     }
 
     public static int smallest(int [] array){
@@ -173,9 +178,10 @@ public class MainProgram {
 
     public static int indexOfSmallestFrom(int [] array, int startIndex){
         int smallest = array[startIndex];
-        int index = 0;
+        int index = startIndex;
         for (int i = startIndex; i < array.length; i++){
-            if (array[i] <= smallest){
+            if (array[i] < smallest){
+                smallest = array[i];
                 index = i;
             }
         }
