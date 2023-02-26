@@ -20,5 +20,4 @@ public class TodoList {
     public void remove(int index){
         this.toDo.remove(index -1);
     }
-
 }

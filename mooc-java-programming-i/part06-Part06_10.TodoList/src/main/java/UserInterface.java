@@ -41,4 +41,3 @@ public class UserInterface {
         this.list.remove(index);
         }
 }
-
