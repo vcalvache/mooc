@@ -5,13 +5,6 @@ public class NullPointerExceptionProgram {
 
     public static void main(String[] args) {
 
-        /*
-        Implement a program that causes the NullPointerException error.
-        The error should occur directly after starting the program — don't wait to read input from the user,
-        for instance.
-
-
-        */
         // Implement a program, or modify a program so, that it causes 
         // the NullPointerException -error
 
