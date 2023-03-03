@@ -5,16 +5,6 @@ public class AverageOfTwoNumbers {
 
     public static void main(String[] args) {
 
-        /*
-        Write a program that asks the user for two integers and prints their average.
-
-        Sample output
-        Give the first number:
-        8
-        Give the second number:
-        2
-        The average is 5.0 
-        */
         Scanner scanner = new Scanner(System.in);
 
         // Write your program here
