@@ -1,3 +1,4 @@
+import java.util.TooManyListenersException;
 
 public class SimpleDate {
 
@@ -51,4 +52,32 @@ public class SimpleDate {
         return this.year - other.year - yearRemoved;
     }
 
+    @Override
+    public boolean equals(Object obj){
+        if (this == obj){
+            return true;
+        }
+
+        if (!(obj instanceof SimpleDate)){
+            return false;
+        }
+
+        SimpleDate toCompare = (SimpleDate) obj;
+
+        if (this.day == toCompare.day &&
+            this.month == toCompare.month &&
+            this.year == toCompare.year){
+                return true;
+            }
+        return false;
+    }
+
+    @Override
+    public int hashCode(){
+        int hash = 7;
+        hash = 31 * hash + this.day;
+        hash = 31 * hash + this.month; 
+        hash = 31 * hash + this.year;
+        return hash;
+    }
 }
