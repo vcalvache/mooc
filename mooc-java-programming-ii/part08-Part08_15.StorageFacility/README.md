@@ -31,7 +31,8 @@ Part 2: Listing the units and removing from unit
 
     * Now the class StorageFacility contains the functionality to add an item to a storage unit and to list the contents of a unit. Next add the possibilities to remove an item from a storage unit and to list all the units.
 
-    * public void remove(String storageUnit, String item) removes the given item from the given storage unit. NB! Only removes one item — if there are several items with the same name, the rest still remain. If the storage unit would be empty after the removal, the method also removes the unit.
+    * public void remove(String storageUnit, String item) removes the given item from the given storage unit.
+    NB! Only removes one item — if there are several items with the same name, the rest still remain. If the storage unit would be empty after the removal, the method also removes the unit.
 
     * public ArrayList<String> storageUnits() returns the names of the storage units as a list. NB! Only the units that contain items are listed.
 
