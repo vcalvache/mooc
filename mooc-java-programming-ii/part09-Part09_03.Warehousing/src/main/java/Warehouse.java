@@ -15,6 +15,15 @@ public class Warehouse {
         this.balance = 0.0;
     }
 
+    public Warehouse(double capacity, double initialBalance){
+        if (capacity > 0.0) {
+            this.capacity = capacity;
+        } else {
+            this.capacity = 0.0;
+        }
+        this.balance = initialBalance;
+    }
+
     public double getBalance() {
         return this.balance;
     }
