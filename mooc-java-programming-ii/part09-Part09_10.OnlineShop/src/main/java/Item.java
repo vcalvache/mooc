@@ -13,6 +13,14 @@ public class Item {
         return unitPrice * qty;
     }
 
+    public int getQty(){
+        return this.qty;
+    }
+
+    public String getProduct(){
+        return this.product;
+    }
+
     public void increaseQuantity(){
         this.qty++;
     }

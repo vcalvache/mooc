@@ -251,7 +251,7 @@ Below you'll find a template for a text-based user interface for our store. Crea
 
 The following is a main method that stocks the stores warehouse and sends John to shop in the store.
 
-Warehouse warehouse = new Warehouse();
+        Warehouse warehouse = new Warehouse();
         warehouse.addProduct("coffee", 5, 10);
         warehouse.addProduct("milk", 3, 20);
         warehouse.addProduct("cream", 2, 55);
